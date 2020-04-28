@@ -33,8 +33,6 @@ public class SimpleStatementValuesBinder
                 sb.append(splits[i]);
             }
             query = sb.toString();
-            System.out.println(query);
-
         }
         SimpleStatement simpleStatement = new SimpleStatement(query);
         ConsistencyLevel cl = context.getConsistencyLevel();
